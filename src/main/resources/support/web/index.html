@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ZK Web UI</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="js/lib/jstree/themes/default/style.min.css"/>
+    <link rel="stylesheet" href="style.css"/>
+    <style>
+        .entry {
+            /*max-width: 480px;*/
+            max-width: 700px;
+            padding-left: 12px;
+            padding-right: 12px;
+            margin: 0 auto;
+            /*padding-top: 30px;*/
+            /*height: 100%;*/
+        }
+    </style>
+</head>
+<body>
+<div class="input-box hide" style="background-color: #fff; height: 100%; position: absolute;z-index: 2; width: 100%;">
+    <div class="entry">
+        <div style="font-size: 30px;margin-top:30px;">Please input Zookeeper URL(s)</div>
+        <div style="font-size: 20px; margin: 15px 0; color: #ccc;">Separate: ','</div>
+        <form action="?" style="margin-top: 40px;">
+            <input type="text" name="urls" style="line-height: 50px; font-size: 30px; outline: none; width: 100%; border: none; background: rgb(232, 240, 254);" />
+        </form>
+    </div>
+</div>
+<div class="zk-ui-view">
+    <div class="view">
+        <div class="west ui-scrollbar-light">
+            <div id="tree"></div>
+        </div>
+        <div class="east sub-view ui-scrollbar-light">
+            <table tabindex="-1" class="leaf-table">
+                <thead>
+                <tr>
+                    <th>名称</th>
+                    <th>类型</th>
+                    <th>数据</th>
+                </tr>
+                </thead>
+                <tbody tabindex="-1"></tbody>
+            </table>
+        </div>
+    </div>
+    <div class="statusbar">
+        <span class="text"></span>
+        <span class="help"></span>
+    </div>
+    <div class="float-box">
+        <div class="float-box_text">Expand:</div>
+        <input type="text" class="float-box_input" autocomplete="off" spellcheck="false">
+    </div>
+    <div class="shortcut-help hide">
+        <div>
+            <table>
+                <thead>
+                <tr>
+                    <th>Operation</th>
+                    <th>Scope</th>
+                    <th>Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Alt + E</td>
+                    <td>Global</td>
+                    <td>Open 'Expand' window</td>
+                </tr>
+                <tr>
+                    <td>ESC</td>
+                    <td>Global</td>
+                    <td>Close 'Expand' window</td>
+                </tr>
+                <tr>
+                    <td>Alt + R</td>
+                    <td>Tree</td>
+                    <td>Refresh the selected node</td>
+                </tr>
+                <tr>
+                    <td>Alt + D</td>
+                    <td>Tree</td>
+                    <td>Dump the selected node</td>
+                </tr>
+                <tr>
+                    <td>Alt + Insert</td>
+                    <td>Table</td>
+                    <td>Create a new leaf(node)</td>
+                </tr>
+                <tr>
+                    <td>Alt + Delete</td>
+                    <td>Table</td>
+                    <td>Delete the selected leaf</td>
+                </tr>
+                <tr>
+                    <td>Double click</td>
+                    <td>Table cell value</td>
+                    <td>Edit the clicked value</td>
+                </tr>
+                <tr>
+                    <td>Alt + S</td>
+                    <td>Global</td>
+                    <td>Save all unsaved leaf data</td>
+                </tr>
+                <tr>
+                    <td>Alt + 1</td>
+                    <td>Global</td>
+                    <td>Tree focus</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" crossorigin="anonymous"></script>
+<script src="js/lib/jstree/jstree.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
