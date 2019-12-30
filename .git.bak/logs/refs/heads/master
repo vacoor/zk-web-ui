@@ -1,5 +1,0 @@
-0000000000000000000000000000000000000000 b8189f4c0040aeac63c9105575909df10f0bd654 changhe.yang <changhe.yang@baozun.com> 1563334474 +0800	commit (initial): 从 ccenter 中剥离出来，改为 spring boot
-b8189f4c0040aeac63c9105575909df10f0bd654 2cd1a468e57e8be94b6144eb6a63824e9d114100 changhe.yang <changhe.yang@baozun.com> 1563420727 +0800	commit: 调整下代码结构
-2cd1a468e57e8be94b6144eb6a63824e9d114100 cf6080c0f37c00b552873b199e842f621a6047a5 changhe.yang <changhe.yang@baozun.com> 1563783202 +0800	commit: 调整 zk 事例作用范围为 session
-cf6080c0f37c00b552873b199e842f621a6047a5 bab5a48bb2c7cbe0d069a3194e99254ece512056 changhe.yang <changhe.yang@baozun.com> 1564456853 +0800	commit: 重构代码
-bab5a48bb2c7cbe0d069a3194e99254ece512056 dd5fea9b46490ca196db31b47e3996bad54353fe changhe.yang <changhe.yang@baozun.com> 1564461105 +0800	commit: 添加README.md
