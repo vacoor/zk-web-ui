@@ -3,7 +3,11 @@
 #### 说明
 zk-web-ui 是一个基于web的`zookeeper`管理工具, 对 zk 节点提供增删改操作, 独立于 ccenter(基于ZK的配置中心).
 
-![快照](snapshot.jpg)
+![快照1](snapshot-1.png)
+
+![快照2](snapshot-2.png)
+
+![快照3](snapshot-3.png)
 
 #### 运行
 标准 spring boot 项目, 直接使用 maven 构建即可
